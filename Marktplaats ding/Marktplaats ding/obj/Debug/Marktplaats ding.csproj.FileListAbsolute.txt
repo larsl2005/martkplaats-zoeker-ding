@@ -1,0 +1,10 @@
+C:\Users\lars\source\repos\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.csprojAssemblyReference.cache
+C:\Users\lars\source\repos\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats_ding.Form1.resources
+C:\Users\lars\source\repos\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats_ding.Properties.Resources.resources
+C:\Users\lars\source\repos\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.csproj.GenerateResource.cache
+C:\Users\lars\source\repos\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.csproj.CoreCompileInputs.cache
+C:\Users\lars\source\repos\Marktplaats ding\Marktplaats ding\bin\Debug\Marktplaats ding.exe.config
+C:\Users\lars\source\repos\Marktplaats ding\Marktplaats ding\bin\Debug\Marktplaats ding.exe
+C:\Users\lars\source\repos\Marktplaats ding\Marktplaats ding\bin\Debug\Marktplaats ding.pdb
+C:\Users\lars\source\repos\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.exe
+C:\Users\lars\source\repos\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.pdb
