@@ -31,5 +31,53 @@ namespace Marktplaats_ding
             this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             //this.MaximizeBox = false; --onnodig want FormBorderStyle.FixedToolWindow heeft geen MaximizeBox
         }
+
+        private void Afstand_ValueChanged(object sender, EventArgs e)
+        {
+            switch (Afstand.Value)
+            {
+                case 75:
+                case 50:
+                    Afstand.Increment = 25;
+                    return;
+                case 35:
+                    Afstand.Value = 50;
+                    return;
+                case 25:
+                    Afstand.Increment = 10;
+                    return;
+                case 20:
+                    Afstand.Value = 25;
+                    return;
+                case 15:
+                    return; //om een bug te voorkomen
+                case 10:
+                    Afstand.Increment = 5;
+                    return;
+                case 7:
+                    Afstand.Value = 10;
+                    return;
+                case 5:
+                    Afstand.Increment = 2;
+                    return;
+                case 3:
+                    Afstand.Increment = 2;
+                    return;
+                case 1:
+                    Afstand.Value = 0;
+                    return;
+                case 0:
+                    Afstand.Increment = 3;
+                    return;
+                default:
+                    if (Afstand.Value != 1 | Afstand.Value != 7 | Afstand.Value != 15 | Afstand.Value != 20 | Afstand.Value != 35)
+                    {
+                        Afstand.Value = 0;
+                        MessageBox.Show("Ongeldige afstand");
+                        return;
+                    }
+                    return;
+            }
+        }
     }
 }

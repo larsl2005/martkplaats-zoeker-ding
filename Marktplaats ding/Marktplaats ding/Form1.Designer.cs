@@ -35,6 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.Afstand = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPrijs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Afstand)).BeginInit();
             this.SuspendLayout();
@@ -78,7 +79,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 134);
+            this.button1.Location = new System.Drawing.Point(11, 131);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
             this.button1.TabIndex = 7;
@@ -89,25 +90,20 @@
             // Afstand
             // 
             this.Afstand.Increment = new decimal(new int[] {
-            5,
+            3,
             0,
             0,
             0});
             this.Afstand.Location = new System.Drawing.Point(112, 85);
             this.Afstand.Maximum = new decimal(new int[] {
-            10000000,
+            75,
             0,
             0,
             0});
             this.Afstand.Name = "Afstand";
             this.Afstand.Size = new System.Drawing.Size(120, 20);
             this.Afstand.TabIndex = 8;
-            this.Afstand.Value = new decimal(new int[] {
-            25,
-            0,
-            0,
-            0});
-            //this.Afstand.ValueChanged += new System.EventHandler(this.Afstand_ValueChanged);
+            this.Afstand.ValueChanged += new System.EventHandler(this.Afstand_ValueChanged);
             // 
             // label3
             // 
@@ -118,11 +114,21 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Max afstand (in km)";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(16, 115);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(199, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "*als Max afstand 0 is, is het alle aftanden";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(253, 175);
+            this.ClientSize = new System.Drawing.Size(253, 166);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Afstand);
             this.Controls.Add(this.button1);
@@ -149,6 +155,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.NumericUpDown Afstand;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
