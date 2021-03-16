@@ -36,14 +36,17 @@
             this.Afstand = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.MinPrice = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPrijs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Afstand)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinPrice)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 58);
+            this.label1.Location = new System.Drawing.Point(14, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 13);
             this.label1.TabIndex = 1;
@@ -51,7 +54,7 @@
             // 
             // MaxPrijs
             // 
-            this.MaxPrijs.Location = new System.Drawing.Point(112, 58);
+            this.MaxPrijs.Location = new System.Drawing.Point(113, 102);
             this.MaxPrijs.Maximum = new decimal(new int[] {
             10000000,
             0,
@@ -79,7 +82,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(11, 131);
+            this.button1.Location = new System.Drawing.Point(12, 175);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
             this.button1.TabIndex = 7;
@@ -94,7 +97,7 @@
             0,
             0,
             0});
-            this.Afstand.Location = new System.Drawing.Point(112, 85);
+            this.Afstand.Location = new System.Drawing.Point(113, 129);
             this.Afstand.Maximum = new decimal(new int[] {
             75,
             0,
@@ -108,7 +111,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 87);
+            this.label3.Location = new System.Drawing.Point(13, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 13);
             this.label3.TabIndex = 9;
@@ -117,17 +120,40 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 115);
+            this.label4.Location = new System.Drawing.Point(17, 159);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(199, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "*als Max afstand 0 is, is het alle aftanden";
             // 
+            // MinPrice
+            // 
+            this.MinPrice.Location = new System.Drawing.Point(113, 76);
+            this.MinPrice.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
+            this.MinPrice.Name = "MinPrice";
+            this.MinPrice.Size = new System.Drawing.Size(120, 20);
+            this.MinPrice.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(14, 76);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Min prijs in euro\'s";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(253, 166);
+            this.ClientSize = new System.Drawing.Size(253, 227);
+            this.Controls.Add(this.MinPrice);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Afstand);
@@ -141,6 +167,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MaxPrijs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Afstand)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinPrice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,6 +183,8 @@
         private System.Windows.Forms.NumericUpDown Afstand;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown MinPrice;
+        private System.Windows.Forms.Label label5;
     }
 }
 

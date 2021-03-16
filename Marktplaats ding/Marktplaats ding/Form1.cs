@@ -20,9 +20,14 @@ namespace Marktplaats_ding
         private void button1_Click(object sender, EventArgs e)
         {
             string SearchTerm = ZoekTerm.Text;
+            if(MaxPrijs.Value < MinPrice.Value)
+            {
+                MaxPrijs.Value = MinPrice.Value;
+            }
             string priceincents = (MaxPrijs.Value * 100).ToString();
             string maxdistance = (Afstand.Value * 1000).ToString();
-            System.Diagnostics.Process.Start("https://marktplaats.nl/q/" + SearchTerm + "/#PriceInCentsTo:" + priceincents + "|sortBy:PRICE|sortOrder:INCREASING|distanceMeters:" + maxdistance + "|searchInTitleAndDescription:true");
+            string minpriceincents = (MinPrice.Value * 100).ToString();
+            System.Diagnostics.Process.Start("https://marktplaats.nl/q/" + SearchTerm + "#/PriceCentsFrom:" + minpriceincents + "/#PriceInCentsTo:" + priceincents + "|sortBy:PRICE|sortOrder:INCREASING|distanceMeters:" + maxdistance + "|searchInTitleAndDescription:true");
         }
 
         private void Form1_Load(object sender, EventArgs e)
