@@ -27,3 +27,13 @@ C:\Users\Lars\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats 
 C:\Users\Lars\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.csproj.CoreCompileInputs.cache
 C:\Users\Lars\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.exe
 C:\Users\Lars\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.pdb
+C:\Users\user\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\bin\Debug\Marktplaats ding.exe.config
+C:\Users\user\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\bin\Debug\Marktplaats ding.exe
+C:\Users\user\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\bin\Debug\Marktplaats ding.pdb
+C:\Users\user\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.csprojAssemblyReference.cache
+C:\Users\user\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats_ding.Form1.resources
+C:\Users\user\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats_ding.Properties.Resources.resources
+C:\Users\user\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.csproj.GenerateResource.cache
+C:\Users\user\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.exe
+C:\Users\user\Desktop\martkplaats-zoeker-ding-main\Marktplaats ding\Marktplaats ding\obj\Debug\Marktplaats ding.pdb

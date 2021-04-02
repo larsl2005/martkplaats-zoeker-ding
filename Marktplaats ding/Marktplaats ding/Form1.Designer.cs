@@ -38,6 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.MinPrice = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPrijs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Afstand)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinPrice)).BeginInit();
@@ -63,6 +64,7 @@
             this.MaxPrijs.Name = "MaxPrijs";
             this.MaxPrijs.Size = new System.Drawing.Size(120, 20);
             this.MaxPrijs.TabIndex = 2;
+            this.MaxPrijs.ValueChanged += new System.EventHandler(this.MaxPrijs_ValueChanged);
             // 
             // ZoekTerm
             // 
@@ -137,6 +139,7 @@
             this.MinPrice.Name = "MinPrice";
             this.MinPrice.Size = new System.Drawing.Size(120, 20);
             this.MinPrice.TabIndex = 13;
+            this.MinPrice.ValueChanged += new System.EventHandler(this.MinPrice_ValueChanged);
             // 
             // label5
             // 
@@ -147,11 +150,21 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Min prijs in euro\'s";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(206, 205);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "V0.3";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(253, 227);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.MinPrice);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -185,6 +198,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown MinPrice;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
 

@@ -84,5 +84,21 @@ namespace Marktplaats_ding
                     return;
             }
         }
+
+        private void MinPrice_ValueChanged(object sender, EventArgs e)
+        {
+            if(MinPrice.Value > MaxPrijs.Value)
+            {
+                MaxPrijs.Value = MinPrice.Value;
+            }
+        }
+
+        private void MaxPrijs_ValueChanged(object sender, EventArgs e)
+        {
+            if (MaxPrijs.Value < MinPrice.Value)
+            {
+                MinPrice.Value = MaxPrijs.Value;
+            }
+        }
     }
 }
