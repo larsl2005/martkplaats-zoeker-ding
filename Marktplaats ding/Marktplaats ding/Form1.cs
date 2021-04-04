@@ -51,6 +51,9 @@ namespace Marktplaats_ding
             this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.Size = new Size(269, 302);
             //this.MaximizeBox = false; --onnodig want FormBorderStyle.FixedToolWindow heeft geen MaximizeBox
+            //zet items in combobox
+            Filters.Items.Add(new KeyValuePair<String,String>("Antiek en Kunst","0"));
+            Filters.Items.Add(new KeyValuePair<String,String>("Audio, tv en foto", "1"));
         }
 
         private void Afstand_ValueChanged(object sender, EventArgs e)
@@ -132,6 +135,16 @@ namespace Marktplaats_ding
             {
                 this.Size = size1;
                 button2.Text = "filters: uit";
+            }
+        }
+
+        private void Filters_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (Filters.Text)
+            {
+                case "[Antiek en Kunst, 0]":
+
+                    return;
             }
         }
     }

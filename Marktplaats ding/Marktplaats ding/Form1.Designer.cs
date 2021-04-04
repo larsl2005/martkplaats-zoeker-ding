@@ -42,6 +42,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.AntiekEnKunst = new System.Windows.Forms.CheckBox();
             this.AudioTvEnFoto = new System.Windows.Forms.CheckBox();
+            this.Filters = new System.Windows.Forms.ComboBox();
+            this.Filters2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPrijs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Afstand)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinPrice)).BeginInit();
@@ -175,7 +177,7 @@
             // AntiekEnKunst
             // 
             this.AntiekEnKunst.AutoSize = true;
-            this.AntiekEnKunst.Location = new System.Drawing.Point(254, 22);
+            this.AntiekEnKunst.Location = new System.Drawing.Point(254, 109);
             this.AntiekEnKunst.Name = "AntiekEnKunst";
             this.AntiekEnKunst.Size = new System.Drawing.Size(100, 17);
             this.AntiekEnKunst.TabIndex = 16;
@@ -185,18 +187,43 @@
             // AudioTvEnFoto
             // 
             this.AudioTvEnFoto.AutoSize = true;
-            this.AudioTvEnFoto.Location = new System.Drawing.Point(254, 45);
+            this.AudioTvEnFoto.Location = new System.Drawing.Point(254, 132);
             this.AudioTvEnFoto.Name = "AudioTvEnFoto";
             this.AudioTvEnFoto.Size = new System.Drawing.Size(104, 17);
             this.AudioTvEnFoto.TabIndex = 17;
             this.AudioTvEnFoto.Text = "Audio, tv en foto";
             this.AudioTvEnFoto.UseVisualStyleBackColor = true;
             // 
+            // Filters
+            // 
+            this.Filters.AllowDrop = true;
+            this.Filters.FormattingEnabled = true;
+            this.Filters.Location = new System.Drawing.Point(254, 20);
+            this.Filters.MaxLength = 8;
+            this.Filters.Name = "Filters";
+            this.Filters.Size = new System.Drawing.Size(121, 21);
+            this.Filters.TabIndex = 18;
+            this.Filters.Text = "{FILTERS}";
+            this.Filters.SelectedIndexChanged += new System.EventHandler(this.Filters_SelectedIndexChanged);
+            // 
+            // Filters2
+            // 
+            this.Filters2.AllowDrop = true;
+            this.Filters2.FormattingEnabled = true;
+            this.Filters2.Location = new System.Drawing.Point(381, 20);
+            this.Filters2.MaxLength = 8;
+            this.Filters2.Name = "Filters2";
+            this.Filters2.Size = new System.Drawing.Size(121, 21);
+            this.Filters2.TabIndex = 19;
+            this.Filters2.Text = "{FILTERS}";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(499, 263);
+            this.Controls.Add(this.Filters2);
+            this.Controls.Add(this.Filters);
             this.Controls.Add(this.AudioTvEnFoto);
             this.Controls.Add(this.AntiekEnKunst);
             this.Controls.Add(this.button2);
@@ -238,6 +265,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox AntiekEnKunst;
         private System.Windows.Forms.CheckBox AudioTvEnFoto;
+        private System.Windows.Forms.ComboBox Filters;
+        private System.Windows.Forms.ComboBox Filters2;
     }
 }
 
