@@ -39,6 +39,9 @@
             this.MinPrice = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.AntiekEnKunst = new System.Windows.Forms.CheckBox();
+            this.AudioTvEnFoto = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.MaxPrijs)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Afstand)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinPrice)).BeginInit();
@@ -84,7 +87,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 175);
+            this.button1.Location = new System.Drawing.Point(12, 212);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 23);
             this.button1.TabIndex = 7;
@@ -153,17 +156,50 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(206, 205);
+            this.label6.Location = new System.Drawing.Point(157, 241);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 13);
+            this.label6.Size = new System.Drawing.Size(71, 13);
             this.label6.TabIndex = 14;
-            this.label6.Text = "V0.3";
+            this.label6.Text = "(INDEV) V0.4";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(20, 183);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(92, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Filters: uit";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // AntiekEnKunst
+            // 
+            this.AntiekEnKunst.AutoSize = true;
+            this.AntiekEnKunst.Location = new System.Drawing.Point(254, 22);
+            this.AntiekEnKunst.Name = "AntiekEnKunst";
+            this.AntiekEnKunst.Size = new System.Drawing.Size(100, 17);
+            this.AntiekEnKunst.TabIndex = 16;
+            this.AntiekEnKunst.Text = "Antiek en kunst";
+            this.AntiekEnKunst.UseVisualStyleBackColor = true;
+            // 
+            // AudioTvEnFoto
+            // 
+            this.AudioTvEnFoto.AutoSize = true;
+            this.AudioTvEnFoto.Location = new System.Drawing.Point(254, 45);
+            this.AudioTvEnFoto.Name = "AudioTvEnFoto";
+            this.AudioTvEnFoto.Size = new System.Drawing.Size(104, 17);
+            this.AudioTvEnFoto.TabIndex = 17;
+            this.AudioTvEnFoto.Text = "Audio, tv en foto";
+            this.AudioTvEnFoto.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(253, 227);
+            this.ClientSize = new System.Drawing.Size(499, 263);
+            this.Controls.Add(this.AudioTvEnFoto);
+            this.Controls.Add(this.AntiekEnKunst);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.MinPrice);
             this.Controls.Add(this.label5);
@@ -199,6 +235,9 @@
         private System.Windows.Forms.NumericUpDown MinPrice;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox AntiekEnKunst;
+        private System.Windows.Forms.CheckBox AudioTvEnFoto;
     }
 }
 

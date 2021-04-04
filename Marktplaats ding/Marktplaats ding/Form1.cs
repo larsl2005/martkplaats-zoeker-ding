@@ -27,13 +27,29 @@ namespace Marktplaats_ding
             string priceincents = (MaxPrijs.Value * 100).ToString();
             string maxdistance = (Afstand.Value * 1000).ToString();
             string minpriceincents = (MinPrice.Value * 100).ToString();
-            System.Diagnostics.Process.Start("https://marktplaats.nl/q/" + SearchTerm + "#/PriceCentsFrom:" + minpriceincents + "/#PriceInCentsTo:" + priceincents + "|sortBy:PRICE|sortOrder:INCREASING|distanceMeters:" + maxdistance + "|searchInTitleAndDescription:true");
+            string Filters = "";
+            //--------gen filters--------
+            if(button2.Text == "filters: aan")//had geen zin om een bool er in te doen, checkt of filters aan staan.
+            {
+                Filters = "/l";
+                if(AntiekEnKunst.Checked == true)
+                {
+                    Filters = Filters + "/antiek-en-kunst";
+                }
+                else if (AudioTvEnFoto.Checked == true)
+                {
+                    Filters = Filters + "/audio-tv-en-foto";
+                }
+            }
+            //---------------------------
+            System.Diagnostics.Process.Start("https://marktplaats.nl"+ Filters +"/q/" + SearchTerm + "#/PriceCentsFrom:" + minpriceincents + "/#PriceInCentsTo:" + priceincents + "|sortBy:PRICE|sortOrder:INCREASING|distanceMeters:" + maxdistance + "|searchInTitleAndDescription:true");
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Text = "Marktplaats Zoeker";
             this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            this.Size = new Size(269, 302);
             //this.MaximizeBox = false; --onnodig want FormBorderStyle.FixedToolWindow heeft geen MaximizeBox
         }
 
@@ -98,6 +114,24 @@ namespace Marktplaats_ding
             if (MaxPrijs.Value < MinPrice.Value)
             {
                 MinPrice.Value = MaxPrijs.Value;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //269, 302
+            //515, 302
+            Size size1 = new Size(269, 302);
+            Size size2 = new Size(515, 302);
+            if (this.Size == size1)
+            {
+                this.Size = size2;
+                button2.Text = "filters: aan";
+            }
+            else if(this.Size == size2)
+            {
+                this.Size = size1;
+                button2.Text = "filters: uit";
             }
         }
     }
